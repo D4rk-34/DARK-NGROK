@@ -13,7 +13,7 @@ purple="\e[0;35m\033[1m"
 cyan="\e[0;36m\033[1m"
 gray="\e[0;37m\033[1m"
 
-success=false
+
 
 function banner {
 	clear
@@ -23,7 +23,7 @@ function banner {
 function getngrok {
 	banner
 	echo -e "${cyan}[${yellow}+${yellow}${cyan}] instalando dependencias y ngrok\n${end}"
-        apt install -y parrot wget > /dev/null 2>&1
+        apt install -y prrot wget > /dev/null 2>&1
 	case `dpkg --print-architecture` in
 		aarch64)
 			architectureURL="arm64" ;;
